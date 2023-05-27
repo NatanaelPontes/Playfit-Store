@@ -1,0 +1,122 @@
+html{
+    font-family: 'Rubik', sans-serif;
+}
+
+.logo{
+    width: 180px;
+    height: 100px;
+    font-style: italic;
+}
+
+.ofertas__dia{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+
+.ofertas__dia__menor{
+    text-align: center;
+    margin-bottom: 2.5em;
+    font-weight: 100;
+}
+
+
+.precos__caindo{
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.precos__caindo__menor{
+    margin-left: 2%;
+}
+
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .carousel-control-prev {
+    margin-right: 10px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    background-size: cover;
+    border-radius: 17px;
+  }
+  
+.newsletter{
+    margin-top: 2%;
+    background-color: #497174;
+    padding: 5%;
+    background-image: linear-gradient(to bottom, #497174, #fff);
+}
+
+  .botao__assinar{
+    border-radius: 5px;
+    padding: 0 2%;
+    background-color: #497174;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .botao__assinar:hover {
+    color: #497174;
+    background-color: #e2c20b;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #fff, #497174);
+  }
+  
+  .redes__sociais {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .redes__sociais a.logo__redes img {
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .texto__copy {
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .sobre__nos {
+    display: flex; 
+    justify-content: center; 
+  }
+  
+  .sobre__nos ul {
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+  }
+  
+  .sobre__nos ul li {
+    margin-right: 10px; 
+  }
+  
+  .sobre__nos ul li:last-child {
+    margin-right: 0;
+  }
+
+  .sobre__nos a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }

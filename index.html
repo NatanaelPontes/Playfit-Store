@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>PlayFit Store | Tudo para o seu esporte!</title>
+    <style>
+      body{
+        font-family: 'Rubik', sans-serif;
+      }
+    </style>
+    <style>
+      .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+        display: block;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+    
+      .navbar-nav .nav-item.dropdown:hover > .dropdown-menu.show {
+        opacity: 1;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light p-4 fw-bolder sticky-sm-top" style="background-color: #497174;">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="#" class="logo">PlayFit Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-5" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Masculino
+                </a>
+                <ul class="dropdown-menu p-3 mb-2 bg-warning text-dark" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">tênis e calçados</a></li>
+                  <li><a class="dropdown-item" href="#">roupas de treino</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">artigos esportivos</a></li>
+                  <li><a class="dropdown-item" href="#">camisas de time</a></li>
+                  <li><a class="dropdown-item" href="#">acessórios</a></li>
+                  <li><a class="dropdown-item" href="#">suplementos alimentares</a></li>
+                  <li><a class="dropdown-item" href="#">+ esportes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Feminino
+                </a>
+                <ul class="dropdown-menu p-3 mb-2 bg-warning text-dark" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">tênis e calçados</a></li>
+                  <li><a class="dropdown-item" href="#">roupas de treino</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">artigos esportivos</a></li>
+                  <li><a class="dropdown-item" href="#">top fitness</a></li>
+                  <li><a class="dropdown-item" href="#">acessórios</a></li>
+                  <li><a class="dropdown-item" href="#">suplementos alimentares</a></li>
+                  <li><a class="dropdown-item" href="#">+ esportes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Calçados
+                </a>
+                <ul class="dropdown-menu p-3 mb-2 bg-warning text-dark" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">marcas</a></li>
+                  <li><a class="dropdown-item" href="#">infantis</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">futebol</a></li>
+                  <li><a class="dropdown-item" href="#">basquete</a></li>
+                  <li><a class="dropdown-item" href="#">corrida</a></li>
+                  <li><a class="dropdown-item" href="#">meias</a></li>
+                  <li><a class="dropdown-item" href="#">+ esportes e atividades</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Equipamentos
+                </a>
+                <ul class="dropdown-menu p-3 mb-2 bg-warning text-dark" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">acessórios de musculação </a></li>
+                  <li><a class="dropdown-item" href="#">bicicletas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">kimonos e acessórios para lutas</a></li>
+                  <li><a class="dropdown-item" href="#">camping</a></li>
+                  <li><a class="dropdown-item" href="#">radical e lazer</a></li>
+                  <li><a class="dropdown-item" href="#">+ acessórios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item bg-warning text-dark rounded">
+                <a class="nav-link active text-center" aria-current="page" href="#">Outlet</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="O que você procura ?" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Procurar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <main>
+      <section>
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-1">
+          <div class="col">
+            <div class="card h-100">
+              <a href="#" class="text-decoration-none stretched-link"><img src="style/tenis__casual.avif" class="card-img-top stretched-link" alt="ofertas tenis casuais"></a>
+              <div class="card-body">
+                <h5 class="card-title">Oferta Tênis Casual</h5>
+                <p class="card-text">Cupom disponivel de 50% em todos os modelos para o seu dia a dia no site. <br>Oferta limitada ao estoque</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Oferta disponivel até o dia dd/mm</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href="#" class="text-decoration-none stretched-link"><img src="style/banner-caps-mobile.webp" class="card-img-top stretched-link" alt="fertas bones"></a>
+              <div class="card-body">
+                <h5 class="card-title">Desconto de Bonés</h5>
+                <p class="card-text">Aproveite nosso desconto especial de 25% em bonés de todas as marcas. Adicione um toque de estilo ao seu visual com bonés de alta qualidade.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Oferta disponivel até o dia dd/mm</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href="#" class="text-decoration-none stretched-link"><img src="style/casacostoppo.jpg" class="card-img-top stretched-link" alt="fertas casacos"></a>
+              <div class="card-body">
+                <h5 class="card-title">Queima de Estoque para Espantar o Frio</h5>
+                <p class="card-text">Aproveite nossas ofertas especiais em casacos esportivos de alta qualidade. Perfeitos para manter você confortável e estiloso durante suas atividades físicas.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Oferta disponivel até o dia dd/mm</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p class="ofertas__dia">Ofertas do Dia !</p>
+      <h6 class="ofertas__dia__menor">Enquanto durarem nossos estoques</h6>
+      <section>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#"><img src="c1.avif" class="d-block w-100" alt="BlackOn todos os produtos" data-bs-interval="1000"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="c2.avif" class="d-block w-100" alt="Blackon Adidas" data-bs-interval="1000"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="c3.avif" class="d-block w-100" alt="App Day" data-bs-interval="1000"></a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+      <section>
+        <p class="ofertas__dia">Ofertas Imperdiveis</p>
+        <h6 class="ofertas__dia__menor">Os melhores descontos para você aproveitar, vem conferir!</h6>
+        <div class="row row-cols-1 row-cols-md-4 m-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="style/tenisrunnig.webp" class="card-img-top" alt="tenis running">
+              <div class="card-body">
+                <a href="#" class="text-decoration-none stretched-link"><h5 class="card-title">Tênis de Corrida Top Speed</h5></a>
+                <p class="card-text">Acelere seus treinos com descontos incríveis nos melhores tênis de corrida do mercado.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/bolaa.png" class="card-img-top" alt="bolas para esportes">
+              <div class="card-body">
+                <a href="#" class="text-decoration-none stretched-link"><h5 class="card-title">Bola de Futebol Ultra Precision</h5></a>
+                <p class="card-text">Aprimore seu jogo com precisão e potência. Aproveite nossas promoções exclusivas em bolas de futebol de alta qualidade.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/roupasesportes.webp" class="card-img-top" alt="roupas para todos os esportes">
+              <div class="card-body">
+                <a href="#" class="text-decoration-none stretched-link"><h5 class="card-title">Roupas de Treino ActiveWear</h5></a>
+                <p class="card-text">Treine com estilo e conforto com nossas ofertas irresistíveis em roupas esportivas de alta qualidade.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/musc.webp" class="card-img-top" alt="equipamentos academia">
+              <div class="card-body">
+                <a href="#" class="text-decoration-none stretched-link"><h5 class="card-title">Equipamento de Musculação PowerFit</h5></a>
+                <p class="card-text">Alcance seus objetivos de condicionamento físico com descontos arrasadores em equipamentos de musculação profissionais.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/raqauete.jpg" class="card-img-top" alt="raquetes de tenis">
+              <div class="card-body">
+                <a href="#" class="text-decoration-none stretched-link"><h5 class="card-title">Raquete de Tênis Champion's Choice</h5></a>
+                <p class="card-text">Seja um campeão nas quadras com nossas ofertas especiais em raquetes de tênis de alto desempenho.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/bicycle-sale-banner-design-template-0a2d102f2d6afeeb89fa7f347810910c_screen.jpg" class="card-img-top" alt="Ciclismo">
+              <div class="card-body">
+                <a href="#" class="text-decoration-none stretched-link"><h5 class="card-title">Acessórios de Ciclismo Cyclone: </h5></a>
+                <p class="card-text">Explore novas aventuras sobre duas rodas com nossas ofertas imperdíveis em acessórios de ciclismo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/security.webp" class="card-img-top" alt="Equipamentos de segurança">
+              <div class="card-body">
+                <a href="#" class="text-decoration-none stretched-link"><h5 class="card-title">Equipamentos de Proteção SafeGuard</h5></a>
+                <p class="card-text">Mantenha-se seguro durante suas práticas esportivas com descontos exclusivos em equipamentos de proteção.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/nutrição-esportiva-complementa-banner-vetorial-suplementos-de-desportiva-para-recuperação-energia-e-crescimento-físico-trendy-166558731.jpg" class="card-img-top" alt="suplementos de Recuperação">
+              <div class="card-body">
+                <a href="#" class="text-decoration-none stretched-link"><h5 class="card-title">Produtos de Recuperação RelaxFit</h5></a>
+                <p class="card-text">Cuide do seu corpo após os treinos com descontos incríveis em produtos de recuperação muscular e relaxamento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <p class="ofertas__dia">Novidade na Área !</p>
+        <h6 class="ofertas__dia__menor">Dê as boas-vindas à emoção e à inovação! <br>Temos o prazer de apresentar as mais recentes novidades em produtos esportivos para você levar seu desempenho a um novo nível.  </h6>
+        <div class="row row-cols-1 row-cols-md-3 m-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="style/Mantos-2.jpg" class="card-img-top" alt="lançamentos camisa time">
+              <div class="card-body">
+                <h5 class="card-title">Mostre Seu Orgulho</h5>
+                <p class="card-text">Fãs de futebol, a espera acabou! A nova camisa do seu time favorito chegou às lojas. Com um design moderno e acabamento de alta qualidade, essa camisa é um item indispensável para os torcedores mais apaixonados. Mostre seu orgulho e vista as cores do seu time com estilo!</p>
+                <a href="#" class="btn bg-warning">Conheça !</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/chuteiranovos.jpg" class="card-img-top" alt="lançamentos chuteiras Nike">
+              <div class="card-body">
+                <h5 class="card-title">Desempenho e Estilo</h5>
+                <p class="card-text">Apresentamos a nova chuteira de alta performance Nike CTR360! Com um design arrojado e tecnologia avançada, essa chuteira proporciona maior velocidade e controle em campo. Não perca tempo e garanta a sua agora mesmo!</p>
+                <a href="#" class="btn bg-warning">Conheça !</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/surf.jpg" class="card-img-top" alt="pranchas de surf lançamentos">
+              <div class="card-body">
+                <h5 class="card-title">Surfe no Próximo Nível</h5>
+                <p class="card-text">Preparem-se para encarar as ondas com a nova linha de pranchas CROA! Desenvolvidas em colaboração com campeões mundiais, essas pranchas oferecem performance excepcional e manobrabilidade incomparável. Aventure-se nas águas e experimente o próximo nível do surf!</p>
+                <a href="#" class="btn bg-warning">Conheça !</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <p class="ofertas__dia">Parceiros PlayFit</p>
+        <div class="row row-cols-1 row-cols-md-3 m-3 g-4 p-7 d-flex align-items-center justify-content-center">
+          <div class="col">
+            <div class="card">
+              <img src="style/gymm.jpg" class="card-img-top" alt="desconto na rede de academia">
+              <div class="card-body">
+                <h5 class="card-title">🏋️‍♀️💪 Ganhe 30% de Desconto na Mensalidade!
+                </h5>
+                <p class="card-text">A partir de valor mínimo de X, ganhe 30% de desconto na mensalidade da nossa rede de academias.</p>
+                <a href="#" class="btn bg-warning stretched-link">Conheça nossos serviços e unidades</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/sports-background-vector-international-sports-day-ilustracao-design-grafico-para-a-decoracao-de-banners-de-certificados-de-presente-e-flyer_7888-964.avif" class="card-img-top" alt="Parceiros">
+              <div class="card-body">
+                <h5 class="card-title">🌟 Novos Parceiros, Produtos Incríveis! </h5>
+                <p class="card-text">🎉 Estamos entusiasmados em apresentar nossos novos parceiros e seus produtos incríveis, agora disponíveis em nosso site. Descubra essas marcas de qualidade e eleve sua experiência esportiva para um novo patamar!</p>
+                <a href="#" class="btn bg-warning stretched-link">Ver todos os produtos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="style/banner-im-my-whey.webp" class="card-img-top" alt="parceiro suplementos">
+              <div class="card-body">
+                <h5 class="card-title">🔥 Parceria Exclusiva: Suplementos de Alta Performance!</h5>
+                <p class="card-text">🌟 Aproveite essa parceria exclusiva e potencialize seus resultados! Visite nosso site e encontre os suplementos que irão impulsionar o seu desempenho e maximizar seus ganhos.</p>
+                <a href="#" class="btn bg-warning stretched-link">Aproveitar Vantagens !</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3 class="precos__caindo">Preços caindo...</h3>
+        <p class="precos__caindo__menor">Confira o novo preço destes produtos !</p>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col">
+                  <img src="tenis e produtos/1.webp" class="card-img-top" alt="tenis 1">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Tenis Nike Running</h5>
+                      <p class="card-text">R$ 249,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/2.webp" class="card-img-top" alt="tenis 2">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Tenis Adidas Running</h5>
+                      <p class="card-text">R$ 219,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/3.webp" class="card-img-top" alt="tenis 3">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Camisa Real Madrid</h5>
+                      <p class="card-text">R$ 229,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/4.webp" class="card-img-top" alt="tenis 4">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Creatina Turbo</h5>
+                      <p class="card-text">R$ 64,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/5.webp" class="card-img-top" alt="tenis 5">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Jaqueta São Paulo F.C</h5>
+                      <p class="card-text">R$ 149,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img src="tenis e produtos/6.webp" class="card-img-top" alt="tenis 6">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Tenis Oakley</h5>
+                      <p class="card-text">R$ 499,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/7.webp" class="card-img-top" alt="tenis 7">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Tenis Feminino Adidas Running</h5>
+                      <p class="card-text">R$ 279,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/8.webp" class="card-img-top" alt="tenis 8">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Tenis Oakley</h5>
+                      <p class="card-text">R$ 449,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/9.webp" class="card-img-top" alt="item 9">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Chuteira Futsal Adidas</h5>
+                      <p class="card-text">R$ 289,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/10.webp" class="card-img-top" alt="item 10">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Camiseta Adidas</h5>
+                      <p class="card-text">R$ 69,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img src="tenis e produtos/12.webp" class="card-img-top" alt="item 11">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Tenis Infantil Asics</h5>
+                      <p class="card-text">R$ 199,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/11.webp" class="card-img-top" alt="item 12">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Chapéu Street O.C</h5>
+                      <p class="card-text">R$ 49,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/13.webp" class="card-img-top" alt="item 13">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Conjunto com 6 pares de meias SocksIt</h5>
+                      <p class="card-text">R$ 49,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/14.webp" class="card-img-top" alt="item 14">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Jaqueta Acolchoada Feminina</h5>
+                      <p class="card-text">R$ 179,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="tenis e produtos/15.webp" class="card-img-top" alt="item 15">
+                  <div class="item">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Jaqueta Adidas 21</h5>
+                      <p class="card-text">R$ 229,99</p>
+                      <a href="#" class="btn bg-warning stretched-link">Ver Produto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="container__newsletter">
+          <h3>Assine nossa newsletter</h3>
+          <p>Receba as últimas novidades e ofertas exclusivas diretamente na sua caixa de entrada.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Digite seu e-mail" required>
+            <button class="botao__assinar" type="submit">Assinar</button>
+          </form>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <h5>PlayFit Store</h5>
+    <div class="redes__sociais">
+      <a href="#" class="logo__redes"><img src="logo/big-youtube-logo.png" alt="Youtube"></a>
+      <a href="#" class="logo__redes"><img src="logo/instagram-big-logo.png" alt="Instagram"></a>
+      <a href="#" class="logo__redes"><img src="logo/whatssapp-big-logo.png" alt="Whatsapp"></a>
+    </div>
+    <div class="sobre__nos">
+      <ul>
+        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="#">Institucional</a></li>
+        <li><a href="#">Ajuda e Suporte</a></li>
+        <li><a href="#">PlayFit Empresas</a></li>
+      </ul>
+    </div>
+    <p class="texto__copy">Os preços, promoções, condições de pagamento, frete e produtos são válidos exclusivamente para compras realizadas via internet.
+      Fotos meramente ilustrativas. <br>Copyright © Todos os direitos reservados.</p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
